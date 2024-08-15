@@ -26,4 +26,6 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     --LuaLine
     use 'nvim-lualine/lualine.nvim'
+    --Formatter
+    use 'stevearc/conform.nvim'
 end)
