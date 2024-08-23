@@ -1,31 +1,42 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    --Plugin Manager
+    -- Plugin Manager
     use 'wbthomason/packer.nvim'
-    --Telescope
+
+    -- Telescope (fuzzy finder)
     use 'nvim-lua/plenary.nvim'
     use {'nvim-telescope/telescope.nvim', tag = '0.1.5'}
-    --Treesitter
+
+    -- Treesitter (Parsing system)
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-    --Colorscheme
+
+    -- Color Scheme
     use 'EdenEast/nightfox.nvim'
-    --LSP
+
+    -- LSP (Language Server Protocol)
     use 'neovim/nvim-lspconfig'
+
+    -- Mason (LSP installer and manager)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
-    --Autocompletion
+
+    -- Autocompletion
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
-    --Snippets
+
+    -- Formatter
+    use 'stevearc/conform.nvim'
+
+    -- Snippets
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
-    --Devicons
-    use 'nvim-tree/nvim-web-devicons'
-    --LuaLine
+
+    -- Status Line
     use 'nvim-lualine/lualine.nvim'
-    --Formatter
-    use 'stevearc/conform.nvim'
+
+    -- Dev Icons
+    use 'nvim-tree/nvim-web-devicons'
 end)

@@ -1,0 +1,5 @@
+require("settings.line")
+require("settings.lsp")
+require("settings.options")
+require("settings.packer")
+require("settings.remaps")

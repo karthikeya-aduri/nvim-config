@@ -1,7 +1,0 @@
-require('config.settings')
-require('config.remaps')
-require('config.packer')
-require('config.lsp')
-require('config.line')
-require('config.project_lsp')
-require('config.format')
