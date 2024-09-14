@@ -7,7 +7,7 @@ require("mason-lspconfig").setup({
 		"clangd",
 		"emmet_language_server",
 		"cssls",
-		"tsserver",
+		"ts_ls",
 		"cmake",
 	},
 })
@@ -37,7 +37,7 @@ lspconfig.cssls.setup({
 	capabilities = capabilities,
 })
 
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
 	capabilities = capabilities,
 })
 
