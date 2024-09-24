@@ -11,7 +11,7 @@ download_url=$(curl -s https://api.github.com/repos/neovim/neovim/releases/tags/
 		| cut -d '"' -f 4)
 
 if [ -z "$download_url" ]; then
-echo "Failed to fetch the url"
+	echo "Failed to fetch the url"
 	exit 1
 fi
 
